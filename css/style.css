@@ -1,0 +1,197 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  line-height: 2;
+  color: #fb8500;
+  font-size: 1.25rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+/************* Layout ****************/
+.hd-container {
+  /* background: #fcf8e8; */
+  background: #fdfcdc;
+  padding: 2em 2em 0;
+  /* apply padding to the outer div */
+  /* help prevents the content taking the full width 
+  problem, look at the comment .header-section */
+  margin-bottom: 4em;
+}
+
+.container {
+  /* this is the general container for the whole website */
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1200px;
+  /* padding: 2em 2em 0; */
+  /* padding here on small screen doesn't take the 
+  full width */
+}
+
+.mdl-sec {
+  margin-bottom: 5em;
+}
+
+.skill-para {
+  margin-top: 0;
+}
+
+.col,
+.hoby-col {
+  margin-bottom: 3em;
+}
+
+.pd-btm {
+  padding-bottom: 4em;
+}
+
+@media (min-width: 900px) {
+  .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+  }
+
+  .col {
+    width: 45%;
+  }
+
+  .hoby-col {
+    width: 31%;
+  }
+}
+
+.skill-hd {
+  margin-bottom: 1em;
+}
+/************** Typography **************/
+h1 {
+  /* color: #df7861; */
+  color: #f07167;
+  font-size: 2rem;
+}
+h2 {
+  color: #f3722c;
+  font-size: 1.6rem;
+  margin: 0 auto;
+  text-decoration: underline;
+}
+
+.intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+
+.intro p {
+  margin-top: 0;
+  font-size: 1.1rem;
+  /* color: #ecb390; */
+}
+
+@media (min-width: 900px) {
+  .intro {
+    padding: 2em 0 0;
+  }
+  .intro h1 {
+    font-size: 4rem;
+    margin-top: 1.4em;
+  }
+  .about-me {
+    width: 60ch;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+.footer-p {
+  margin-bottom: 2em;
+}
+
+/********** image **********/
+.top-cloud,
+.bottom-cloud {
+  min-width: 60px;
+}
+.profile-img,
+.top-cloud,
+.bottom-cloud {
+  width: 20%;
+}
+
+.icon {
+  padding: 0 0.1em;
+}
+
+@media (min-width: 900px) {
+  .hd-container {
+    position: relative;
+  }
+  .top-cloud,
+  .bottom-cloud {
+    position: absolute;
+    max-width: 180px;
+  }
+  .top-cloud {
+    top: 40px;
+    right: 300px;
+  }
+
+  .bottom-cloud {
+    left: 300px;
+    top: 400px;
+  }
+  .mtn-div {
+    margin-top: 5em;
+  }
+}
+/* media query ends here */
+
+.profile-img {
+  border-radius: 100px;
+  min-width: 100px;
+}
+
+.hoby-img {
+  border-radius: 15px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Button */
+
+.btn {
+  font-size: 1.1rem;
+  background-color: #fdfcdc;
+  display: inline-block;
+
+  border: 0.2em solid #f07167;
+  font-weight: 900;
+  color: #f07167;
+  text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+  transition: all 0.15s;
+}
+
+.btn:hover,
+.btn:focus {
+  color: #ffb700;
+  border-color: #ffb700;
+}
+
+btn:active {
+  color: #bbbbbb;
+  border: #bbbbbb;
+}
+
+@media (min-width: 900px) {
+  .btn {
+    padding: 1em 3em;
+  }
+}
